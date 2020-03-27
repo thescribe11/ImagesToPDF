@@ -25,3 +25,6 @@ text += '\n\\end{document}'
 f.write(text)
 f.close()
 os.system(f'pdflatex output.tex')
+os.remove(LOCATION + '\\output.tex')
+os.remove(LOCATION + '\\output.aux')
+os.remove(LOCATION + '\\output.log')
