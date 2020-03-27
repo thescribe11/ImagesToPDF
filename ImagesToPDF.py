@@ -1,7 +1,6 @@
 import os
 from os import listdir
 from os.path import isfile, join
-import subprocess
 
 LOCATION = input("Please input the directory path of the files you want to convert:\n>")
 
