@@ -8,7 +8,7 @@ LOCATION = input("Please input the directory path of the files you want to conve
 while not os.path.isdir(LOCATION):
     LOCATION = input("That path is incorrect.\nPlease re-enter the directory path.")
 
-files = [f for f in listdir(LOCATION) if (isfile(join(LOCATION, f)))]
+files = [f for f in listdir(LOCATION) if isfile(join(LOCATION, f))]
 print(files)
 print(LOCATION + 'output.tex')
 PATH = LOCATION + '\\output.tex'
